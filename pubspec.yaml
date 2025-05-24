@@ -1,0 +1,43 @@
+name: shopping_cart_tracker
+description: A collaborative shopping cart tracking app
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  
+  # Maps
+  mapbox_maps_flutter: ^1.0.0
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  
+  # Backend & Database
+  supabase_flutter: ^2.3.4
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+  photo_view: ^0.14.0
+  
+  # Utils
+  uuid: ^4.3.3
+  intl: ^0.19.0
+  permission_handler: ^11.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
