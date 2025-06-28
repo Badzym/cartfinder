@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'core/constants/api_keys.dart';
 import 'app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // TODO: Replace with your actual Supabase credentials
+
   await Supabase.initialize(
-    url: 'YOUR_SUPABASE_URL',
-    anonKey: 'YOUR_SUPABASE_ANON_KEY',
+    url: ApiKeys.supabaseUrl,
+    anonKey: ApiKeys.supabaseAnonKey,
   );
-  
+
   runApp(const ProviderScope(child: ShoppingCartTrackerApp()));
 }

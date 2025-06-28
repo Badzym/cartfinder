@@ -32,6 +32,9 @@ dependencies:
   intl: ^0.19.0
   permission_handler: ^11.3.0
 
+  # Loading & Error Handling
+  loading_animation_widget: ^1.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
